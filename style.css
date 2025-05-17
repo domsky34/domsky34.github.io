@@ -1,0 +1,64 @@
+
+body {
+  background-image: url('assets/img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #e0f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+header {
+  background: rgba(8, 19, 31, 0.85);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #00eaff;
+}
+#typewriter {
+  font-size: 2rem;
+  color: #00eaff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffc3;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+}
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.skill-block {
+  background-color: #101b2b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00eaff55;
+}
+.profil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #00ffae;
+  margin: 1rem auto;
+  display: block;
+}
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: #101b2b;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #00eaff;
+  text-decoration: none;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 0 10px #00eaff66;
+}
+.card:hover {
+  background: #162638;
+}
