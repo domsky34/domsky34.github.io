@@ -1,22 +1,23 @@
-
 body {
   background-image: url('assets/img/background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: #e0f7fa;
+  color: #f1f5f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
+
 header {
-  background: rgba(8, 19, 31, 0.85);
+  background: #1e293b;
   padding: 2rem 1rem;
   text-align: center;
-  border-bottom: 2px solid #00eaff;
+  border-bottom: 2px solid #3b82f6;
 }
+
 nav.main-nav {
   margin-top: 1rem;
-  background: rgba(10, 20, 30, 0.6);
+  background: rgba(30, 41, 59, 0.8);
   border-radius: 10px;
   padding: 1rem;
 }
@@ -36,7 +37,7 @@ nav.main-nav li {
 }
 
 nav.main-nav a {
-  color: #00ffc3;
+  color: #60a5fa;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
@@ -45,74 +46,86 @@ nav.main-nav a {
 }
 
 nav.main-nav a:hover {
-  background-color: #00ffc3;
-  color: #000;
+  background-color: #3b82f6;
+  color: #ffffff;
 }
 
 #typewriter {
   font-size: 2rem;
-  color: #00eaff;
+  color: #3b82f6;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #00ffc3;
+  border-right: 2px solid #60a5fa;
   animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
 }
 @keyframes typing { from { width: 0; } to { width: 100%; } }
 @keyframes blink { 50% { border-color: transparent; } }
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+
 .skill-block {
-  background-color: #101b2b;
+  background-color: #1e293b;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 15px #00eaff55;
+  box-shadow: 0 0 15px #3b82f644;
 }
+
 .skill-block h3 {
-  color: #00ffae;
+  color: #60a5fa;
   margin-bottom: 0.8rem;
 }
+
 .skill-block ul {
   padding-left: 1rem;
 }
+
 .skill-block li {
   margin-bottom: 0.4rem;
 }
+
 .profil-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid #00ffae;
+  border: 2px solid #60a5fa;
   margin: 1rem auto;
   display: block;
 }
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .card {
-  background: #101b2b;
+  background: #1e293b;
   padding: 1rem;
   border-radius: 8px;
-  color: #00eaff;
+  color: #f1f5f9;
   text-decoration: none;
   flex: 1 1 250px;
   text-align: center;
-  box-shadow: 0 0 10px #00eaff66;
+  box-shadow: 0 0 10px #3b82f644;
 }
+
 .card:hover {
-  background: #162638;
+  background: #3b82f6;
+  color: #ffffff;
 }
+
 .section,
 .skill-block {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-out;
 }
+
 .section.visible,
 .skill-block.visible {
   opacity: 1;
