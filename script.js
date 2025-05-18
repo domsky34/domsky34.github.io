@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = "Don-Styron FRAGONARD – Cybersecurity | Pentest | DevSecOps";
 
   if (window.innerWidth > 600) {
-    // Effet typewriter sur desktop uniquement
     let i = 0;
     function type() {
       if (i < text.length) {
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     type();
   } else {
-    // Mobile : affiche directement
     typewriter.textContent = text;
   }
 });
