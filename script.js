@@ -23,3 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Effet typewriter (garde ton code ici si déjà présent)
+
+  // Observer pour apparition fluide
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Ne l'observe plus une fois visible
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  // Cible toutes les sections et blocs
+  document.querySelectorAll(".section, .skill-block").forEach(el => {
+    observer.observe(el);
+  });
+});
